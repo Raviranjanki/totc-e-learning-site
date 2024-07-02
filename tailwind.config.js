@@ -10,7 +10,8 @@ export default {
         viking: {
           dark: 'rgb(var(--color-primary))',
           light: 'rgb(var(--color-primary) / 80%)',
-          lighter: 'rgb(var(--color-primary) / 20%)',
+          lighter: 'rgb(var(--color-primary) / 60%)',
+          lightest: 'rgb(var(--color-primary) / 20%)',
         },
         grey: {
           dark: "#B2B3CF",
