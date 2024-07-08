@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header className={twMerge("fixed z-50 inset-x-0 top-0 transition-all duration-500", changeColor ? "shadow-md bg-white" : '')}>
-      <section className='max-w-7xl 2xl:max-w-screen-2xl mx-auto flex justify-between px-6 lg:px-8 py-2 space-x-10 items-center'>
+      <div className='max-w-7xl 2xl:max-w-screen-2xl mx-auto flex justify-between px-6 lg:px-8 py-2 space-x-10 items-center'>
         <div className="w-20 object-cover">
           {changeColor ? (
             <img className="h-full w-auto" src="/public/logo.png" alt="" />
@@ -36,7 +36,7 @@ export default function Header() {
             <Link to="/register" className={twMerge(`hidden lg:inline-flex items-center px-7 py-1.5 bg-white bg-opacity-40  text-white rounded-full shadow-md ${changeColor && "bg-viking-dark"}`)}>Sign Up</Link>
           </div>
         )}
-      </section>
+      </div>
     </header>
   );
 }
